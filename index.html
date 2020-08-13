@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+	 crossorigin="anonymous">
+</head>
+<html>
+
+<body>
+<div class="container px-5 py-3">
+
+   <form action="/create" method="POST">
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" required="">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" required="">
+  </div>
+   <div class="form-group">
+    <label for="name">Name</label>
+    <input type="name" class="form-control" id="name" required="">
+  </div>
+  <div class="form-group">
+    <label for="address">Address</label>
+    <textarea class="form-control" id="address" rows="3" required=""></textarea>
+  </div>
+   <div class="form-group">
+    <label for="city">City</label>
+    <input type="city" class="form-control" id="city" required="">
+  </div>
+   <div class="form-group">
+    <label for="state">State </label>
+    <select class="form-control" id="state" placeholder="Choose..." required="">
+      <option>Delhi</option>
+      <option>Punjab</option>
+      <option>Haryana</option>
+      <!-- <option></optsion>
+      <option></option> -->
+    </select>
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1" required="">I accept terms and conditions</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign In</button>
+</form>
+  
+</div>
+	<!-- <div class="container text-center mt-5" > 
+		<!-- <h2>Are you a new user?</h2><br>
+		 <h3>Click the button below to register</h3>
+		<form action="/create" method="GET">
+			<button type="submit" value="Create" class="btn btn-success" style="height:50px;width :100px; margin-top:30px;">Register</button> 
+ </form>
+  </div> -->
+  
+</body>
+</html>
