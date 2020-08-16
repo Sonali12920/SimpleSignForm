@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
 	<title>Registration</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
@@ -7,11 +8,30 @@
 <html>
 
 <body>
-<div class="container px-5 py-3">
-
-   <form action="/create" method="POST">
-  <div class="form-group">
-    <label for="email">Email address</label>
+<!-- Button trigger modal -->
+<div class="container text-center"  >
+  <dv class="card text-center" style="margin:15% 10%; padding:5% 10%;">
+<h4>Click the button below to sign in</h4>
+<button  " type="button" class="btn btn-primary mx-5 my-2" data-toggle="modal" data-target="#exampleModal">
+  Sign In
+</button>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        	<div class="container px-5 py-3">
+		<form action="/create" method="POST">
+			<div class="form-group">
+				<label for="email">Email address</label>
     <input type="email" class="form-control" id="email" required="">
   </div>
   <div class="form-group">
@@ -24,37 +44,41 @@
   </div>
   <div class="form-group">
     <label for="address">Address</label>
-    <textarea class="form-control" id="address" rows="3" required=""></textarea>
+    <textarea class="form-control" id="address" rows="3" "></textarea>
   </div>
    <div class="form-group">
     <label for="city">City</label>
-    <input type="city" class="form-control" id="city" required="">
+    <input type="city" class="form-control" id="city" >
   </div>
    <div class="form-group">
     <label for="state">State </label>
-    <select class="form-control" id="state" placeholder="Choose..." required="">
+    <select required class="form-control" id="state" >
+      <option selected hidden>Choose...</option>
       <option>Delhi</option>
-      <option>Punjab</option>
-      <option>Haryana</option>
-      <!-- <option></optsion>
-      <option></option> -->
+      <option>Mumbai</option>
+      <option>Kolkata</option>
+      <option>Chennai</option>
     </select>
   </div>
   <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1" required="">I accept terms and conditions</label>
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" required >
+    <label class="form-check-label" for="exampleCheck1" >I accept terms and conditions</label>
   </div>
   <button type="submit" class="btn btn-primary">Sign In</button>
-</form>
-  
+</form> 
 </div>
-	<!-- <div class="container text-center mt-5" > 
-		<!-- <h2>Are you a new user?</h2><br>
-		 <h3>Click the button below to register</h3>
-		<form action="/create" method="GET">
-			<button type="submit" value="Create" class="btn btn-success" style="height:50px;width :100px; margin-top:30px;">Register</button> 
- </form>
-  </div> -->
-  
+      </div>
+      <div class="modal-footer">
+       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div> 
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
